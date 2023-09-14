@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="REGISTER"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nama_txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Masukkan Nama Lengkap Anda"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_register" />
+
+    <EditText
+        android:id="@+id/username_txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Masukkan Username"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/nama_txt"
+        app:layout_constraintStart_toStartOf="@+id/nama_txt"
+        app:layout_constraintTop_toBottomOf="@+id/nama_txt" />
+
+    <Spinner
+        android:id="@+id/spinner_jenis_kelamin"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/jeniskelamin"
+        app:layout_constraintEnd_toEndOf="@+id/Tanggal_Lahir.txt"
+        app:layout_constraintStart_toStartOf="@+id/username_txt"
+        app:layout_constraintTop_toBottomOf="@+id/Tanggal_Lahir.txt" />
+
+    <EditText
+        android:id="@+id/email_txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Masukkan Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/username_txt"
+        app:layout_constraintStart_toStartOf="@+id/username_txt"
+        app:layout_constraintTop_toBottomOf="@+id/username_txt" />
+
+    <EditText
+        android:id="@+id/password_txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Masukkan Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/email_txt"
+        app:layout_constraintStart_toStartOf="@+id/email_txt"
+        app:layout_constraintTop_toBottomOf="@+id/email_txt" />
+
+    <EditText
+        android:id="@+id/Tanggal_Lahir.txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Masukkan Tanggal Lahir"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/password_txt"
+        app:layout_constraintStart_toStartOf="@+id/password_txt"
+        app:layout_constraintTop_toBottomOf="@+id/password_txt" />
+
+    <EditText
+        android:id="@+id/alamat.txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Masukkan Alamat"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_jenis_kelamin"
+        app:layout_constraintStart_toStartOf="@+id/spinner_jenis_kelamin"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_jenis_kelamin" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/alamat.txt"
+        app:layout_constraintStart_toStartOf="@+id/alamat.txt"
+        app:layout_constraintTop_toBottomOf="@+id/alamat.txt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

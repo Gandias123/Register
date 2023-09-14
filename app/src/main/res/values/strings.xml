@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">TugasRegister</string>
+    <string-array name="Negara">
+        <item>Astraulia</item>
+        <item>Bangladesh</item>
+        <item>China</item>
+        <item>Jepang</item>
+        <item>Malaysia</item>
+        <item>Thailand</item>
+        <item>Indonesia</item>
+    </string-array>
+    <string name="Register">Register</string>
+    <string-array name="jeniskelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
 </resources>
